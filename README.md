@@ -30,15 +30,16 @@ fastboot oem unlock [unlock code that was copied]
 ```
 Now the bootloader was unlocked and I could use fastboot to start flashing images.
 
-5. I then flashed a lot of images, and all flashes were successful, no errors, etc. But I could never boot into any of the flashed images, except or Huawei Stock Recovery, `stock-kk.img`. but the last files I flashed were:
+5. I then flashed a lot of images, and all flashes were successful, no errors, etc. But I could never boot into any of the flashed images, except or Huawei Stock Recovery, `stock-kk.img`.
+
+6. The last files I flashed were:
 ```
 fastboot flash recovery twrp-3.2.3-0-cherry.img
 fastboot flash system lineage-15.1-20190221-nightly-cherry-signed.zip
 fastboot flash system open_gapps-arm64-8.1-nano-20190222.zip
 fastboot flash system addonsu-15.1-arm-signed.zip
 ```
-
-6. I ran
+After this, I ran
 ```
 fastboot reboot
 ```
